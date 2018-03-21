@@ -9,9 +9,8 @@ jobs:
       - restore_cache:
           keys:
             - v1-dependencies-{{ checksum "requirements_dev.txt" }}
-            - v1-dependencies-
       - run:
-          name: install dependencies
+          name: install
           command: |
             python3 -mvenv venv
             . venv/bin/activate
@@ -21,10 +20,15 @@ jobs:
             - ./venv
           key: v1-dependencies-{{ checksum "requirements_dev.txt" }}
       - run:
-          name: run tests
+          name: test
           command: |
             . venv/bin/activate
             make test
       - store_artifacts:
           path: report.html
           destination: report.html
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - build
