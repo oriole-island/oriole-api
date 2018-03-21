@@ -55,3 +55,5 @@ ENV/
 .ropeproject
 /site
 .mypy_cache/
+assets/
+report.html
