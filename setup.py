@@ -9,11 +9,21 @@ with open('README.rst') as readme_file:
 with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
-requirements = ['Click>=6.0', ]
+requirements = [
+    'Click>=6.0',
+    'pip==9.0.2',
+    'wheel==0.30.0',
+    'watchdog==0.8.3',
+    'tox==2.9.1',
+    'coverage==4.5.1',
+    'Sphinx==1.7.1',
+    'twine==1.11.0',
+    'pytest==3.4.2',
+    'pytest-runner==4.2',
+    'pytest-html==1.16.0',
+    'bumpversion==0.5.3',
+]
 
-setup_requirements = ['pytest-runner', ]
-
-test_requirements = ['pytest', ]
 
 setup(
     author="Eric.Zhou",
@@ -38,9 +48,7 @@ setup(
     keywords='oriole-test',
     name='oriole-test',
     packages=find_packages(include=['oriole_test']),
-    setup_requires=setup_requirements,
     test_suite='tests',
-    tests_require=test_requirements,
     url='https://github.com/zhouxiaoxiang/oriole-test',
     version='0.2.1',
     zip_safe=False,
