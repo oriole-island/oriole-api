@@ -3,7 +3,7 @@ cache: pip
 python:
   - 3.6
 install:
-  - pip install .
+  - make install
 script:
   - make test
 notifications:
