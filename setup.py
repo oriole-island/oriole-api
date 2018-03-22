@@ -8,6 +8,7 @@ with open('HISTORY.rst') as f:
 
 requirements = [
     'Click>=6.0',
+    'oriole>=7.1.0',
 ]
 
 setup(
