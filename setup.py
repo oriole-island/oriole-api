@@ -7,8 +7,6 @@ with open('HISTORY.rst') as f:
     history = f.read()
 
 requirements = [
-    'setuptools>=39.0.1',
-    'wheel>=0.30.0',
     'Click>=6.0',
     'oriole>=7.1.0',
 ]
