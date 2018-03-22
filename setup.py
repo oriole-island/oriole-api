@@ -1,29 +1,14 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
 from setuptools import setup, find_packages
 
-with open('README.rst') as readme_file:
-    readme = readme_file.read()
+with open('README.rst') as f:
+    readme = f.read()
 
-with open('HISTORY.rst') as history_file:
-    history = history_file.read()
+with open('HISTORY.rst') as f:
+    history = f.read()
 
 requirements = [
     'Click>=6.0',
-    'pip==9.0.2',
-    'wheel==0.30.0',
-    'watchdog==0.8.3',
-    'tox==2.9.1',
-    'coverage==4.5.1',
-    'Sphinx==1.7.1',
-    'twine==1.11.0',
-    'pytest==3.4.2',
-    'pytest-runner==4.2',
-    'pytest-html==1.16.0',
-    'bumpversion==0.5.3',
 ]
-
 
 setup(
     author="Eric.Zhou",
