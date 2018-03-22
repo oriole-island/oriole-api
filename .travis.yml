@@ -3,9 +3,9 @@ cache: pip
 python:
   - 3.6
 install:
-  - make install
+  - pip install .
 script:
-  - make test
+  - make
 notifications:
   email:
     - xiaoxiang.cn@gmail.com
@@ -21,7 +21,7 @@ deploy:
   on:
     tags: true
     repo: zhouxiaoxiang/oriole-test
-  distributions: bdist_wheel
+  distributions: bdist_wheel sdist
   user: zhouxiaoxiang
   password:
     secure: L8VIHEOMD7le1dVkilq5CNgFYapnxxUEqHEF8mx7+v2Xy4svwrPx1AUufR9RuvkTBDKZPjOzQjvnEf8zwXGeCLsBq8Arq8UYogKax2z5yS6u6QIS5xpIA2BxKS56lEPK1CAkrZVzcl0kdRdN2BAtAhdeWUFHtssdpAbfeFyPTGz4JAdSSpv9FW3PD9l3ZLYI+drThy9qOM4g4z+qkE9nKBLzkeGJB1b3twCnBK1kYov5OVZc0+6aZTcSyxkL2ChLxESR7eQdyz6sDTjr1uToafRh8htJ0lHmP7PXiipM1lw1Psdc1l4GsExrf0F1NuCZoogHqCK5jC4gPwR5suzoeu5xZgvix4YM3Q0V/NbRAXPaIjIaCOYRFUePI7W8VT2O2DlQ6UWe2KvsS/cykP91qIilyoHv9zlAejpL6gXSPEE44d+AFeWa26Dk8K0Evq83sp3/cSXB/oqJcCHDSTJRJQCVKqcvNfuS/ZfKT49B+9DM99BCace2BHwVo/1lrdOWq3C5r8GUZTfdJTwv/yGpAWNTQm2FonczYdfOzaoB9BJIwgSiHFYZ1mPWo3aFYSLqnStaLdimMx/VHa+karP26D/LkOiFrnQyukVQ4yGQppTdbNpEycSav0McPErgGWp7f4KJeXZTsCVMVdbFTnnkytA1khcnzc2d2tLhqH1450A=

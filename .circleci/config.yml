@@ -12,7 +12,7 @@ jobs:
             python3 -mvenv venv
             . venv/bin/activate
             pip install .
-            make test
+            make
       - store_artifacts:
           path: report.html
           destination: report.html
