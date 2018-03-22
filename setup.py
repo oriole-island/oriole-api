@@ -38,6 +38,6 @@ setup(
     packages=find_packages(include=['oriole_test']),
     test_suite='tests',
     url='https://github.com/zhouxiaoxiang/oriole-test',
-    version='0.4.2',
+    version='0.4.3',
     zip_safe=False,
 )
