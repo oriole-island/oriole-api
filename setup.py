@@ -1,11 +1,5 @@
 from setuptools import setup, find_packages
 
-with open('README.rst') as f:
-    readme = f.read()
-
-with open('HISTORY.rst') as f:
-    history = f.read()
-
 requirements = [
     'Click>=6.0',
     'oriole>=7.1.0',
@@ -29,7 +23,7 @@ setup(
     },
     install_requires=requirements,
     license="MIT license",
-    long_description=readme + '\n\n' + history,
+    long_description=open('README.rst').read(),
     include_package_data=True,
     keywords='oriole-test',
     name='oriole-test',
