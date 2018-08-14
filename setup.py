@@ -1,35 +1,30 @@
-from setuptools import setup, find_packages
+from setuptools import find_packages, setup
 
-requirements = [
-    'Click>=6.0',
-    'oriole>=7.1.0',
+
+install_requires = [
+    "pyramid >= 1.9.0",
+    "nameko == 2.9.0",
 ]
 
 setup(
-    author="Eric.Zhou",
-    author_email='xiaoxiang.cn@gmail.com',
-    classifiers=[
-        'Development Status :: 2 - Pre-Alpha',
-        'Intended Audience :: Developers',
-        'License :: OSI Approved :: MIT License',
-        'Natural Language :: English',
-        'Programming Language :: Python :: 3.6',
-    ],
-    description="Support tdd for oriole-service.",
-    entry_points={
-        'console_scripts': [
-            'oriole_test=oriole_test.cli:main',
-        ],
-    },
-    install_requires=requirements,
-    license="MIT license",
-    long_description=open('README.rst').read(),
-    include_package_data=True,
-    keywords='oriole-test',
-    name='oriole-test',
-    packages=find_packages(include=['oriole_test']),
-    test_suite='tests',
-    url='https://github.com/zhouxiaoxiang/oriole-test',
+    name='oriole-api',
     version='0.8.0',
-    zip_safe=False,
-)
+    description='Code for oriole-webapi.',
+    long_description=open('README.rst').read(),
+    author='Eric.Zhou',
+    author_email='xiaoxiang.cn@gmail.com',
+    url='https://github.com/zhouxiaoxiang/oriole-test',
+    packages=find_packages(),
+    include_package_data=True,
+    install_requires=install_requires,
+    zip_safe=True,
+    license='Apache License, Version 2.0',
+    classifiers=[
+        "Programming Language :: Python",
+        "Operating System :: POSIX",
+        "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.7",
+        "Topic :: Internet",
+        "Topic :: Software Development :: Libraries :: Python Modules",
+        "Intended Audience :: Developers",
+    ])
