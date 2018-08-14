@@ -1,18 +1,18 @@
 language: python
 cache: pip
 python:
-  - 3.6
+- 3.6
 install:
-  - pip install .
+- pip install .
 script:
-  - make
+- make
 notifications:
   email:
-    - xiaoxiang.cn@gmail.com
-    - xiaoxiang_cn@qq.com
+  - xiaoxiang.cn@gmail.com
+  - xiaoxiang_cn@qq.com
   webhooks:
     urls:
-      - https://webhooks.gitter.im/e/cf729254f8369ea4f7c3
+    - https://webhooks.gitter.im/e/cf729254f8369ea4f7c3
     on_success: change
     on_failure: always
     on_start: never
@@ -20,8 +20,8 @@ deploy:
   provider: pypi
   on:
     tags: true
-    repo: zhouxiaoxiang/oriole-test
+    repo: zhouxiaoxiang/oriole-api
   distributions: bdist_wheel sdist
   user: zhouxiaoxiang
   password:
-    secure: L8VIHEOMD7le1dVkilq5CNgFYapnxxUEqHEF8mx7+v2Xy4svwrPx1AUufR9RuvkTBDKZPjOzQjvnEf8zwXGeCLsBq8Arq8UYogKax2z5yS6u6QIS5xpIA2BxKS56lEPK1CAkrZVzcl0kdRdN2BAtAhdeWUFHtssdpAbfeFyPTGz4JAdSSpv9FW3PD9l3ZLYI+drThy9qOM4g4z+qkE9nKBLzkeGJB1b3twCnBK1kYov5OVZc0+6aZTcSyxkL2ChLxESR7eQdyz6sDTjr1uToafRh8htJ0lHmP7PXiipM1lw1Psdc1l4GsExrf0F1NuCZoogHqCK5jC4gPwR5suzoeu5xZgvix4YM3Q0V/NbRAXPaIjIaCOYRFUePI7W8VT2O2DlQ6UWe2KvsS/cykP91qIilyoHv9zlAejpL6gXSPEE44d+AFeWa26Dk8K0Evq83sp3/cSXB/oqJcCHDSTJRJQCVKqcvNfuS/ZfKT49B+9DM99BCace2BHwVo/1lrdOWq3C5r8GUZTfdJTwv/yGpAWNTQm2FonczYdfOzaoB9BJIwgSiHFYZ1mPWo3aFYSLqnStaLdimMx/VHa+karP26D/LkOiFrnQyukVQ4yGQppTdbNpEycSav0McPErgGWp7f4KJeXZTsCVMVdbFTnnkytA1khcnzc2d2tLhqH1450A=
+    secure: oP0xZvVjNLlYb9JEq3oTMg1uDCFy1cU+kdC0IK5SJxz439sXibHhhcZvdD0/4NaAJJFbsLIlAOOix/ykO5xgPOvpbBcqjUpUF0v3CCjqzwJnUc5HZ7EUzqa4aK2vnt0pwV7peYIEDvkOAUpJ3Qr21Flh/22mgo/+oqqI2VhtmPy3D3QRDf2FZZoj0vQINrGj23JUsBrDJczgSdMndYAxi4qYICey+JOVeZXiyJewr3IHjjRISa+Qtug7ilRyc2wXnXEB70rfgmyWggHFIIiginYWrSQHGOwlDOnMhRyhGXClK6RWALExo4nNfazfvAKFqN5zfEm8JwnHL/G4YAbw1LDhnnBZ8OdVI2zUjp6ZOGEofls8yjZgHF+giye/LzcbcRAX3mJsE3dDUtArhJT92Zq4s+y8WiBNkcjIt8P0yXJJP0+kHLgBres6g83NPRKI/XFY9FeHTcRTLTayjppLakws6rkVU7JnbWlU3t0h6Mgne/80FHeqlD7SIr/lkM2V0qWvp5ew7g7KejQP5PxXycBEuHdA5GYQK4we21rPlwTjaEh29WfHXvsVmrSutVw/kx/5PKqXESwsui4fZ55UOji4Iyge4Ese6k1nDiFGEXsN/v1F1H7pBrysVZpXq7fD+uiw8QuA+11oOQuNanyzrVF2Nq+Gl+o+l8oBX4SmHd8=
