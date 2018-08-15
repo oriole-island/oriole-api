@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from oriole_api import success, fail
+from oriole_api.json import success, fail
 
 
 def test_success():
