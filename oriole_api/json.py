@@ -21,7 +21,7 @@ _js = [
     ("Content-Type", "application/json"),
     ("Access-Control-Allow-Origin", "*"),
     ("Access-Control-Allow-Credentials", "true"),
-    ("Access-Control-Allow-Headers", "Origin, Content-Type, Accept"),
+    ("Access-Control-Allow-Headers", "Origin, Content-Type, Accept, Content-Disposition"),
     ("Access-Control-Allow-Methods", "POST,GET,PUT,OPTIONS,PATCH")
 ]
 
