@@ -19,7 +19,7 @@ notifications:
 deploy:
   provider: pypi
   on:
-    repo: zhouxiaoxiang/oriole-api
+    repo: oriole-island/oriole-api
   distributions: bdist_wheel sdist
   user: zhouxiaoxiang
   password:
