@@ -8,7 +8,7 @@ install_requires = [
 
 setup(
     name='oriole-api',
-    version='2.3.0',
+    version='3.0.0',
     description='Code for oriole-webapi.',
     long_description=open('README.rst').read(),
     author='Eric.Zhou',
