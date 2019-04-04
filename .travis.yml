@@ -20,7 +20,7 @@ deploy:
   provider: pypi
   on:
     repo: oriole-island/oriole-api
-  distributions: bdist_wheel sdist
+  distributions: bdist_wheel
   user: zhouxiaoxiang
   password:
     secure: dz4LT41gXNj89Ie6XIfiwfrRWnEgP7n8OipY4qzVqlWaIKQiBQ3xuClqnGm5zXdkEQHnCIjbCo0iB1c7x2U4WPMveDuHx+cSGRb3g6NFyVfOiRg7NdiwRKBP22+6zqycQf4RPX0iSKhWnXRs3gKyrLvCIXgQQ7sjNiQwUnU5+GdaX/EO9qsdwdBf9fG4iwSnU54gOMJ9GzHdWo9ZsamAKp/15QIbnOeHA8+h6aVGkPhJikTWSV8hvXx5SAzOX5+r5SpOAFZNqcEEDPO7EL+ertS5HF//cXMiNEQQpAFbcbvNlQTEiv0BDbGl6nzAjPkAnjFxOgQBmRzGMHdHfMvXeYVvKw97+ak1hjuA6Oe5AnDfbIfRGVTGKA7yWpRp04q/GzTxH8HxQV2cgUCw2Td6jkTaYfm2FAARxXRIph8G0sh0FnKmF6uBQDfOeBDedFrtm16We5Bf0PDQgshHD88tX8jixjjVdN3i+Rivcy4QP96nSIOJkCIzjPPQX1IcN6esxIH2sIw4w4EoP2stHQqFdSkcXhDsQo6u0AL22Ai8o/GS4XSjg5xlBaqvwH5ZbS/j+fsST4JwuZr3DtMbpJj+KdkPLRmVWX2TSMGeei9tT7Y1pa/ht0pVysq7fYDbL0ONszVaFQCOhzIojefsDItwI/lJLrccc3cA+w88UlBlbjI=
