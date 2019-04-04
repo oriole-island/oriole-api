@@ -15,9 +15,13 @@
 #
 
 import re
+import logging
 from pyramid.settings import asbool, aslist
 from nameko.standalone.rpc import ClusterRpcProxy
+from nameko.exceptions import RpcTimeout
 from oriole_api.json import success, fail, set_json, error_response
+
+logger = logging.getLogger(__name__)
 
 
 def check_auth(req):
@@ -57,7 +61,12 @@ def main(req, handler):
     with ClusterRpcProxy({"AMQP_URI": uri}, timeout=timeout) as srv:
         req.json_result = fail()
         req.srv = srv
-        return handler(req)
+        try:
+            ret = handler(req)
+        except RpcTimeout:
+            logger.exception("Error: microservice timeout")
+            raise
+        return ret
 
 
 def check_factory(handler, registry):
