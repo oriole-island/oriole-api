@@ -3,7 +3,7 @@ from setuptools import find_packages, setup
 
 install_requires = [
     "pyramid >= 1.9.0",
-    "nameko == 2.11.0",
+    "nameko == 2.12.0",
 ]
 
 setup(
